@@ -73,7 +73,6 @@ public class S3Upload {
         	private long curSize = 0;
         	private long duration = 0;
         	private double speed = 0;
-			@Override
 			public void progressChanged(ProgressEvent progressEvent) {
 				endTime = System.currentTimeMillis() / 1000;
 				curSize += progressEvent.getBytesTransferred();

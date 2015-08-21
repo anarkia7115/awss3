@@ -29,7 +29,6 @@ public class S3UploadTrack {
         // add a ProgressListener to your request to receive notifications 
         // when bytes are transferred.
         request.setGeneralProgressListener(new ProgressListener() {
-			@Override
 			public void progressChanged(ProgressEvent progressEvent) {
 				System.out.println("Transferred bytes: " + 
 						progressEvent.getBytesTransferred());
